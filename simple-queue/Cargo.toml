@@ -6,3 +6,6 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+bytecodec = "0.4.15"
+httpcodec = "0.2.3"
+wasmedge_wasi_socket = "0.4.3"
