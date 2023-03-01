@@ -29,7 +29,7 @@ fn handle_http(req: Request<String>, queue: &mut Queue) -> bytecodec::Result<Res
         ("POST", "/") => {
             let body = req.body();
             queue.enqueue(body.to_string());
-            success_response("Successfully added a ToDo item.")
+            success_response("Successfully added a message.")
         }
         ("GET", "/") => {
             let message = match queue.dequeue() {
