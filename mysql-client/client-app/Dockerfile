@@ -10,4 +10,5 @@ RUN /root/.wasmedge/bin/wasmedgec target/wasm32-wasi/release/client-app.wasm cli
 
 FROM scratch
 COPY --link --from=build /usr/src/client-app/client-app.wasm client-app.wasm
+EXPOSE 8080
 ENTRYPOINT [ "client-app.wasm" ]

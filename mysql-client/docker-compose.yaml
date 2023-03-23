@@ -4,6 +4,8 @@ services:
     image: wasm-demo-mysql-client
     build: 
       context: client-app
+    ports:
+      - 8080:8080
     platform: wasi/wasm
     runtime: io.containerd.wasmedge.v1
     environment:
