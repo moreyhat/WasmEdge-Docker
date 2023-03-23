@@ -9,3 +9,4 @@ This repository includes examples of WASM applicaton running on Docker.
 - [fibonacci-sequence](./fibonacci-sequence/)
 - [http-clinet](./http-client/)
 - [simple-queue](./simple-queue/)
+- [mysql-client](./mysql-client/)
